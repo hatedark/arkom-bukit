@@ -14,6 +14,10 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'greenl': '#5fc789',
+                'greenr': '#8adf48'
+            }
         },
     },
 

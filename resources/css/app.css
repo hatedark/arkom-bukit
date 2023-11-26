@@ -1,3 +1,144 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--pink);
+}
+
+strong {
+    color: var(--purple);
+}
+
+h1, h3 {
+    letter-spacing: -0.05rem;
+    line-height: 0.9;
+    font-size: var(--m);
+}
+
+p {
+    padding-bottom: 1rem;
+    font-size: var(--s);
+}
+
+hr {
+    padding: 1rem 0;
+    color: var(--dark);
+}
+
+/* Container & Section */
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.section {
+    margin-top: 5rem;
+}
+
+/* Responsiveness */
+/* xs */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+
+    p {
+        font-size: var(--m);
+    }
+
+    h1, h3 {
+        font-size: var(--l);
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* Lg */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    p {
+        font-size: var(--l);
+    }
+
+    h1, h3 {
+        font-size: var(--xl);
+    }
+}
+
+/* xL */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    .section {
+        margin-top: 10rem;
+    }
+
+    p {
+        font-size: var(--xl);
+    }
+
+    h1, h3 {
+        font-size: var(--xxl);
+    }
+}
+
+/* 2xL */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+
+    p {
+        font-size: var(--xxl);
+    }
+
+    h1, h3 {
+        font-size: var(--xxxl);
+    }
+}

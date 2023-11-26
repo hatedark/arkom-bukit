@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1a1a1a; /* Set your desired background color */
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            width: 150px; /* Set your desired width */
+            height: auto; /* To maintain aspect ratio */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        li {
+            font-size: 16px; /* Set your desired font size */
+            font-family: 'Montserrat', sans-serif; /* Use your desired font */
+            font-weight: 700;
+            color: white; /* Set your desired text color */
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1a; /* Set your desired background color */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 12px;
+            font-size: 16px; /* Set your desired font size */
+            color: white; /* Set your desired text color */
+            text-decoration: none;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            ul {
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: #1a1a1a; /* Set your desired background color */
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                display: none;
+            }
+
+            li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <img class="logo" src="logo.svg">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+            <div class="dropdown-btn">Jelajahi &#9660;</div>
+            <div class="dropdown-content">
+                <a href="#Jelajah Bukit">Jelajah Bukit</a>
+                <a href="#Galeri">Galeri</a>
+                <a href="#Rekomendasi">Rekomendasi</a>
+                <a href="#Profile">Profile</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <div class="dropdown-btn">Reservasi &#9660;</div>
+            <div class="dropdown-content">
+                <a href="#TiketMasuk">Tiket Masuk</a>
+                <a href="#MejaCafe">Meja Cafe</a>
+                <a href="#Riwayat">Riwayat</a>
+            </div>
+        </li>
+        <li><a href="#informasi">Informasi</a></li>
+        <li><a href="#login">Login</a></li>
+    </ul>
+    <div class="menu-toggle">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<!-- Rest of your HTML content goes here -->
+
+</body>
+<script>
+    function navigateTo(page) {
+        window.location.href = page;
+    }
+
+    document.querySelector('.dropdown-content a[href="#Jelajah Bukit"]').addEventListener('click', function () {
+        navigateTo('jelajah-bukit.html');
+    });
+    document.querySelector('.dropdown-content a[href="#Galeri"]').addEventListener('click', function () {
+navigateTo('galeri.html');
+});
+
+     document.querySelector('.dropdown-content a[href="#Rekomendasi"]').addEventListener('click', function () {
+ navigateTo('rekomendasi.html');
+});
+    document.querySelector('.dropdown-content a[href="#Profile"]').addEventListener('click', function () {
+ navigateTo('profile.html');
+});
+</script>
+
+
+<script>
+document.querySelector('.dropdown-content a[href="#TiketMasuk"]').addEventListener('click', function () {
+navigateTo('tiket-masuk.html'); // Replace 'tiket-masuk.html' with the actual URL for Tiket Masuk
+});
+
+document.querySelector('.dropdown-content a[href="#MejaCafe"]').addEventListener('click', function () {
+navigateTo('meja-cafe.html'); // Replace 'meja-cafe.html' with the actual URL for Meja Cafe
+});
+
+document.querySelector('.dropdown-content a[href="#Riwayat"]').addEventListener('click', function () {
+navigateTo('riwayat.html'); // Replace 'riwayat.html' with the actual URL for Riwayat
+});
+</script>
+
+</html>
+
+        <div class="inner-wrapper">
+            <img class="bc" src="bc1.svg"  style="width: 100%; height: 100%; background: linear-gradient(0deg, #8b8888 0%, #8b8888 100%)" src="https://via.placeholder.com/1300x553" >
+         
+    
+            <div class="container animated-text">
+                <div class="content">
+                    <h1 class="animated" style=" font-family: 'Arial', sans-serif;">Hallo Good People !!</h1>
+                    <p>Selamat datang di destinasi wisata yang menakjubkan, Bukit Panyangrayan di kota Tasikmalaya! Dengan keindahan alamnya yang memukau, bukit ini menjadi tempat yang sempurna untuk melepaskan diri dari hiruk-pikuk kehidupan sehari-hari. Suasana kafe yang tenang dan nyaman, ditemani oleh aroma kopi segar yang menggoda, mengundang pengunjung untuk bersantai dan menikmati waktu mereka. Meja-meja kayu yang terletak di bawah naungan pohon-pohon tinggi memberikan pengalaman bersantap yang unik. Dengan kombinasi kuliner yang menggoda dan pemandangan alam yang menawan, kafe Panyangrayan adalah tempat yang harus dikunjungi bagi mereka yang mencari pengalaman yang tak terlupakan di bawah langit biru yang cerah.</p>
+             </div>
+            </div>
+                    <div style="color: black; font-size: 32px; font-family: Montserrat; font-weight: 700; margin-top: 50px; letter-spacing: 3px; word-wrap: break-word; text-align: center;">Beberapa Spot Menarik di Bukit Panyangrayan</div><br/><br/><br/><br/><br/>
+                </div>
+            </div>
+            <div>
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; background-color: #f0f0f0; padding: 20px;">
+                    <div style="width: 45%; margin-bottom: 10px;">
+                        <img src="Rectangle 107.svg" onclick="openDestinationPage('destinasi 1.html')" style="width: 100%; height: auto; border-radius: 20px; cursor: pointer;" />
+                    </div>
+                    <div style="width: 45%; margin-top: 10px;">
+                        <img src="Rectangle 105.svg" onclick="openDestinationPage('destinasi2.html')" style="width: 100%; height: auto; border-radius: 20px; cursor: pointer;" />
+                    </div>
+                    <div style="width: 45%; margin-bottom: 10px;">
+                        <img src="Rectangle 108.svg" onclick="openDestinationPage('destinasi3.html')" style="width: 100%; height: auto; border-radius: 20px; cursor: pointer;" />
+                    </div>
+                    <div style="width: 45%; margin-top: 10px;">
+                        <img src="Rectangle 103.svg" onclick="openDestinationPage('destinasi4.html')" style="width: 100%; height: auto; border-radius: 20px; cursor: pointer;" />
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+                function openDestinationPage(destination) {
+                    window.location.href = destination;
+                }
+            </script>
+            
+            
+         
+      
+        
+   
+      
+    
+    <div style="width: 150h; height: 50vh; background: #378735">
+        <img  src="logo.svg" display flex;
+        width: 150px;
+        align-items: center; src="https://via.placeholder.com/268x119" />
+        <img class="foother" src="instagram.svg" style="width: 40px; height: 10vh;  display: flex; align-items: center; justify-content: space-between; padding: 05px 1px;">
+        <img class="foother" src="facebook.svg" style="width: 40px; height: 10vh;  display: flex; align-items: center; justify-content: space-between; padding: 05px 1px;">
+        <img class="foother" src="whatsapp (2) 1.svg" style="width: 40px; height: 10vh;  display: flex; align-items: center; justify-content: space-between; padding: 05px 1px;">
+      
+    </div>

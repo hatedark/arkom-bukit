@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font-family: 'Satoshi', sans-serif;
+    font-family: "General Sans", sans-serif;
     background: var(--light);
     color: var(--dark);
 }
@@ -23,27 +23,17 @@ button {
     border: none;
     background: none;
     cursor: pointer;
-    color: var(--dark);
+    color: black;
 }
 
 a {
     text-decoration: none;
-    color: var(--pink);
-}
-
-strong {
-    color: var(--purple);
-}
-
-h1, h3 {
-    letter-spacing: -0.05rem;
-    line-height: 0.9;
-    font-size: var(--m);
+    color: white;
 }
 
 p {
     padding-bottom: 1rem;
-    font-size: var(--s);
+    font-size: 1rem;
 }
 
 hr {
@@ -81,10 +71,6 @@ hr {
     p {
         font-size: var(--m);
     }
-
-    h1, h3 {
-        font-size: var(--l);
-    }
 }
 
 /* md */
@@ -103,10 +89,6 @@ hr {
     p {
         font-size: var(--l);
     }
-
-    h1, h3 {
-        font-size: var(--xl);
-    }
 }
 
 /* xL */
@@ -122,10 +104,6 @@ hr {
     p {
         font-size: var(--xl);
     }
-
-    h1, h3 {
-        font-size: var(--xxl);
-    }
 }
 
 /* 2xL */
@@ -136,9 +114,5 @@ hr {
 
     p {
         font-size: var(--xxl);
-    }
-
-    h1, h3 {
-        font-size: var(--xxxl);
     }
 }

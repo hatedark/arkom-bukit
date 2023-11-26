@@ -12,7 +12,8 @@
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&f[]=general-sans@400&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/css/modern-normalizes.css', 'resources/css/var.css', 'resources/css/components/header.css', 'resources/js/app.js'])
+        <script src="https://kit.fontawesome.com/dd8b8dbd30.js" crossorigin="anonymous"></script>
+        @vite(['resources/css/app.css', 'resources/css/modern-normalizes.css', 'resources/css/var.css', 'resources/css/components/header.css', 'resources/css/components/footer.css', 'resources/css/components/home.css', 'resources/js/app.js'])
     </head>
 
     <body>
@@ -28,8 +29,10 @@
             {{ $slot }}
         </main>
 
-        <footer x-data="{ open: false }" class="footer container section">
-            @include('layouts.footer')
+        <footer x-data="{ open: false }" class="bg-footer">
+            <div class="footer container">
+                @include('layouts.footer')
+            </div>
         </footer>
     </body>
 

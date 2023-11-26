@@ -1,4 +1,4 @@
-<img src="logo.png" alt="Logo Bukit Parangyangan" class="header__logo" />
+<img src="logo.png" alt="Logo Bukit Parangyangan" href="#" class="header__logo" />
 <nav>
     <ul class="header__menu">
         <li>
@@ -8,6 +8,7 @@
         </li>
         <li class="dropdown">
             <button class="dropbtn">Jelajahi</button>
+            <p class="droplogo">&#129171;</p>
             <div class="dropdown-content">
                 <a href="#">Jelajah Bukit</a>
                 <a href="#">Galeri</a>
@@ -17,6 +18,7 @@
         </li>
         <li class="dropdown">
             <button class="dropbtn">Reservasi</button>
+            <p class="droplogo">&#129171;</p>
             <div class="dropdown-content">
                 <a href="#">Tiket Masuk</a>
                 <a href="#">Meja Kafe</a>

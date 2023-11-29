@@ -11,7 +11,7 @@
             <p class="droplogo">&#129171;</p>
             <div class="dropdown-content">
                 <a href="#">Jelajah Bukit</a>
-                <a href="#">Galeri</a>
+                <a href="{{ url ('/galeri')}}">Galeri</a>
                 <a href="#">Rekomendasi</a>
                 <a href="#">Profil</a>
             </div>

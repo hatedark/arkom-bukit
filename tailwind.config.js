@@ -7,6 +7,7 @@ export default {
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        './resources/js/**/*.jsx',
     ],
 
     theme: {
@@ -14,10 +15,6 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
-            colors: {
-                'greenl': '#5fc789',
-                'greenr': '#8adf48'
-            }
         },
     },
 

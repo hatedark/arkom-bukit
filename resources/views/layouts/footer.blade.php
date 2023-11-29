@@ -29,7 +29,7 @@
         <li><a href="#">Area Kafe</a></li>
         <li><a href="#">Area Foto</a></li>
         <li><a href="#">Camping Ground</a></li>
-        <li><a href="#">Galeri</a></li>
+        <li><a href="{{ url('/galeri') }}">Galeri</a></li>
     </div>
 
     <div class="links">
@@ -40,7 +40,7 @@
 
     <div class="links">
         <h2>Informasi</h2>
-        <li><a href="#">Berita</a></li>
+        <li><a href="{{ url('/news') }}">Berita</a></li>
         <li><a href="#">Event</a></li>
     </div>
 

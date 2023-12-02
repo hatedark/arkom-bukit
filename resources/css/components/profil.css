@@ -1,0 +1,39 @@
+.bagian1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.bagian1__title {
+    font-size: 2rem;
+}
+
+.bagian1__subtitle {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.bagian1__img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin: 3rem auto;
+}
+
+.bagian2__subtitle {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.bagian3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    justify-items: center;
+    align-items: baseline;
+    gap: 5rem;
+    margin: 5rem auto;
+}

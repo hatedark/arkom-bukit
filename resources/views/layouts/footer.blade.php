@@ -1,4 +1,3 @@
-<hr style="width: 100%" />
 <div class="footer__container">
 
     <div class="logo__container">
@@ -26,9 +25,9 @@
     <div class="links">
         <h2>Mari Berjelajah</h2>
         <li><a href="{{ url('/area-keluarga') }}">Area Keluarga</a></li>
-        <li><a href="#">Area Kafe</a></li>
-        <li><a href="#">Area Foto</a></li>
-        <li><a href="#">Camping Ground</a></li>
+        <li><a href="{{ url('/area-kafe') }}">Area Kafe</a></li>
+        <li><a href="{{ url('/area-foto') }}">Area Foto</a></li>
+        <li><a href="{{ url('/camping-ground') }}">Camping Ground</a></li>
         <li><a href="{{ url('/galeri') }}">Galeri</a></li>
     </div>
 

@@ -5,6 +5,7 @@
     left: 50%;
     top: 0;
     transform: translateX(-50%);
+    z-index: 99;
 
     background: linear-gradient(90.62deg, #5fc789 41.36%, #8adf48 83.59%);
 }

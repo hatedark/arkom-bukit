@@ -1,3 +1,8 @@
+@php
+$fotoData = get_gallery_data('FOTO');
+$videoData = get_gallery_data('VIDEO');
+@endphp
+
 <x-app-layout>
     <!-- Hero Section start -->
     <section class="hero container">
@@ -14,15 +19,12 @@
     <section class="galeri container">
         <div class="galeri__title title">Foto</div>
         <div class="galeri-container">
-            <img loading="lazy" src="https://source.unsplash.com/random/?family" alt="area keluarga"
-                class="foto__img" />
-            <img loading="lazy" src="https://source.unsplash.com/random/?camera" alt="area foto"
+            @foreach ($fotoData as $item)
+            <img loading="lazy" src="{{ asset('storage/' . $item->Files) }}" alt="area keluarga"
                 class="foto__img galeri__img" />
-            <img loading="lazy" src="https://source.unsplash.com/random/?cafe" alt="area kafe"
-                class="foto__img galeri__img" />
-            <img loading="lazy" src="https://source.unsplash.com/random/?camp" alt="area camping"
-                class="foto__img galeri__img" />
+            @endforeach
         </div>
+       
         <div class="see-al">Lihat lainnya...</div>
     </section>
     {{-- Foto Section End --}}
@@ -31,14 +33,20 @@
     <section class="galeri container">
         <div class="galeri__title title">Video</div>
         <div class="galeri-container">
-            <img loading="lazy" src="https://source.unsplash.com/random/?family" alt="area keluarga"
+            @foreach ($videoData as $item)
+            {{--<img loading="lazy" src="https://source.unsplash.com/random/?family" alt="area keluarga"
                 class="foto__img" />
             <img loading="lazy" src="https://source.unsplash.com/random/?camera" alt="area foto"
                 class="video__img galeri__img" />
             <img loading="lazy" src="https://source.unsplash.com/random/?cafe" alt="area kafe"
                 class="video__img galeri__img" />
             <img loading="lazy" src="https://source.unsplash.com/random/?camp" alt="area camping"
-                class="video__img galeri__img" />
+                class="video__img galeri__img" />--}}
+                <video controls width="1280" height="720">
+                    <source src="{{ asset('storage/' . $item->Files) }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+             @endforeach
         </div>
         <div class="see-al">Lihat lainnya...</div>
     </section>

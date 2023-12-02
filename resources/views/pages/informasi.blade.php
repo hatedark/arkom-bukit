@@ -1,3 +1,7 @@
+@php
+$dataBerita =  get_news_data();
+@endphp
+
 <x-app-layout>
     <!-- Hero Section start -->
     <section class="hero container">
@@ -14,16 +18,20 @@
     <section class="news container">
         <div class="new__title title">Berita</div>
         <div class="news-container">
+            @foreach ($dataBerita as $news)
             <div class="news-card">
-                <img loading="lazy" src="https://source.unsplash.com/random/500x500/?dinner" alt="family-lounge"
+                <img loading="lazy" src="{{ asset('storage/' . $news->thumbnail) }}" alt="family-lounge"
                     class="news__img">
                 <div class="news__desc-wrapper">
-                    <h3 class="news__desc-title">Berita</h3>
-                    <p class="news__desc-subtitle">Saya dengar ada berita, gimana beritanya?</p>
+                    <h3 class="news__desc-title">{!! $news->title !!}</h3>
+                    <p class="news__desc-subtitle">{!! $news->content !!}</p>
                 </div>
                 <i class="fa-solid fa-chevron-right fa-2xl news-logo"></i>
             </div>
-            <div class="news-card">
+            @endforeach
+        </div
+        
+            {{--<div class="news-card">
                 <img loading="lazy" src="https://source.unsplash.com/random/500x500/?dinner" alt="family-lounge"
                     class="news__img">
                 <div class="news__desc-wrapper">
@@ -42,7 +50,7 @@
                 <i class="fa-solid fa-chevron-right fa-2xl news-logo"></i>
             </div>
             <div class="see-al">Lihat lainnya...</div>
-        </div>
+        </div>--}}
     </section>
     {{-- News Section End --}}
 </x-app-layout>

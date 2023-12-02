@@ -31,6 +31,7 @@
         <div class="container" id="container">
             <div class="form-container sign-up-container">
                 <form method="POST" action="{{ route('register') }}">
+                    @csrf
                     <h1>Buat Akun</h1>
                     <span style="margin-bottom: 1rem">buatlah akun baru jika belum punya</span>
                     <!-- Name -->
@@ -57,8 +58,8 @@
                     <x-primary-button class="ms-4">
                         {{ __('Daftar') }}
                     </x-primary-button>
-                    <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
-                        id="signIn" style="cursor: pointer;">
+                    <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800 ghost"
+                        id="signIn1" style="cursor: pointer;">
                         {{ __('Sudah Terdaftar?') }}
                     </a>
 
@@ -66,6 +67,7 @@
             </div>
             <div class="form-container sign-in-container">
                 <form method="POST" action="{{ route('login') }}">
+                    @csrf
                     <h1>Masuk</h1>
                     <span style="margin-bottom: 1rem">gunakan akun yang sudah terdaftar</span>
                     {{-- EMAIL --}}
@@ -102,7 +104,7 @@
                     <div class="overlay-panel overlay-left">
                         <h1>Selamat Datang!</h1>
                         <p>Agar dapat terus terhubung, dipersilahkan login dengan akun anda.</p>
-                        <button class="ghost" id="signIn">Masuk</button>
+                        <button class="ghost" id="signIn2">Masuk</button>
                     </div>
                     <div class="overlay-panel overlay-right">
                         <h1>Hai Kawan!</h1>

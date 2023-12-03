@@ -103,15 +103,6 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__ . '/auth.php';
 
-Route::get('/tiket_masuk', function () {
-    return view('pages.tiket_masuk');
-});
-
-Route::get('/meja_kafe', function () {
-    return view('pages.meja_kafe');
-});
-
-
 Route::get('/riwayat', function () {
     return view('pages.riwayat');
 });

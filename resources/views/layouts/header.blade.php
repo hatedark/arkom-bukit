@@ -30,11 +30,25 @@
                 Informasi
             </a>
         </li>
-        <li>
+        
             @if (Route::has('login'))
                 <div>
                     @auth
-                        <a href="{{ url('/home') }}" class="header__link">Home</a>
+                    <li class="dropdown">
+                        <button class="dropbtn">Logged in</button>
+                        <p class="droplogo">&#129171;</p>
+                        <div class="dropdown-content">
+                            <a href="{{ url('/profile') }}">Profile</a>
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <x-dropdown-link :href="route('logout')"
+                                        onclick="event.preventDefault();
+                                                    this.closest('form').submit();">
+                                    {{ __('Log Out') }}
+                                </x-dropdown-link>
+                            </form>
+                        </div>
+                    </li>
                     @else
                         <a href="{{ route('login') }}" class="header__link">Log in</a>
 

@@ -2,7 +2,7 @@
     <!-- Hero Section start -->
     <section class="hero container">
         <div class="hero__img-wrapper">
-            <img loading="lazy" src="https://source.unsplash.com/random/?green-nature" alt="location" class="hero__img">
+            <img loading="lazy" src="image/IMG (6).jpg" alt="location" class="hero__img">
         </div>
         <div class="hero__desc" style="padding: 0; align-items: center;">
             <h1 class="hero__title">Rekomendasi</h1>
@@ -16,7 +16,7 @@
         <div class="destination-container" style="grid-template-rows: 1fr;">
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
-                    <img loading="lazy" src="https://source.unsplash.com/random/?family" alt="area keluarga"
+                    <img loading="lazy" src="image/IMG (31).jpg" alt="area keluarga"
                         class="galeri__img" />
                 </div>
                 <div class="destination__desc-container">
@@ -27,7 +27,7 @@
             </div>
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
-                    <img loading="lazy" src="https://source.unsplash.com/random/?camera" alt="area foto"
+                    <img loading="lazy" src="image/IMG (9).jpg" alt="area foto"
                         class="galeri__img" />
                 </div>
                 <div class="destination__desc-container">
@@ -47,7 +47,7 @@
         <div class="destination-container" style="grid-template-rows: 1fr;">
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
-                    <img loading="lazy" src="https://source.unsplash.com/random/?family" alt="area keluarga"
+                    <img loading="lazy" src="image/IMG (1).webp" alt="area keluarga"
                         class="galeri__img" />
                 </div>
                 <div class="destination__desc-container">
@@ -58,7 +58,7 @@
             </div>
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
-                    <img loading="lazy" src="https://source.unsplash.com/random/?camera" alt="area foto"
+                    <img loading="lazy" src="image/IMG (7).jpg" alt="area foto"
                         class="galeri__img" />
                 </div>
                 <div class="destination__desc-container">
@@ -78,7 +78,7 @@
         <div class="destination-container" style="grid-template-rows: 1fr;">
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
-                    <img loading="lazy" src="https://source.unsplash.com/random/?family" alt="area keluarga"
+                    <img loading="lazy" src="image/IMG (33).jpg" alt="area keluarga"
                         class="galeri__img" />
                 </div>
                 <div class="destination__desc-container">
@@ -89,7 +89,7 @@
             </div>
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
-                    <img loading="lazy" src="https://source.unsplash.com/random/?camera" alt="area foto"
+                    <img loading="lazy" src="image/IMG (32).jpg" alt="area foto"
                         class="galeri__img" />
                 </div>
                 <div class="destination__desc-container">

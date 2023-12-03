@@ -2,7 +2,7 @@
     <!-- Hero Section start -->
     <section class="hero container">
         <div class="hero__img-wrapper">
-            <img loading="lazy" src="https://source.unsplash.com/random/?green-nature" alt="location" class="hero__img">
+            <img loading="lazy" src="image/IMG (4).jpg" alt="location" class="hero__img">
         </div>
         <div class="hero__desc" style="padding: 0; align-items: center;">
             <h1 class="hero__title">Jelajahi Bukit</h1>
@@ -37,7 +37,7 @@
         <div class="destination-container">
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
-                    <img loading="lazy" src="https://source.unsplash.com/random/?family" alt="area keluarga"
+                    <img loading="lazy" src="image/IMG (19).jpg" alt="area keluarga"
                         class="destination__img" />
                 </div>
                 <div class="destination__desc-container">
@@ -47,7 +47,7 @@
             </div>
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
-                    <img loading="lazy" src="https://source.unsplash.com/random/?camera" alt="area foto"
+                    <img loading="lazy" src="image/IMG (14).jpg" alt="area foto"
                         class="destination__img" />
                 </div>
                 <div class="destination__desc-container">
@@ -57,7 +57,7 @@
             </div>
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
-                    <img loading="lazy" src="https://source.unsplash.com/random/?cafe" alt="area kafe"
+                    <img loading="lazy" src="image/IMG (16).jpg" alt="area kafe"
                         class="destination__img" />
                 </div>
                 <div class="destination__desc-container">
@@ -67,7 +67,7 @@
             </div>
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
-                    <img loading="lazy" src="https://source.unsplash.com/random/?camp" alt="area camping"
+                    <img loading="lazy" src="image/IMG (9)-.jpg" alt="area camping"
                         class="destination__img" />
                 </div>
                 <div class="destination__desc-container">

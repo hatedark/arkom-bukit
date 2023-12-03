@@ -33,20 +33,19 @@
 
     <div class="links">
         <h2>Reservasi</h2>
-        <li><a href="#">Booking Ticket</a></li>
-        <li><a href="#">Booking Kafe</a></li>
+        <li><a href="{{ url('/tiket-online') }}">Booking Ticket</a></li>
+        <li><a href="{{ url('/reservasi-kafe') }}">Booking Kafe</a></li>
     </div>
 
-    <div class="links">
+    {{-- <div class="links">
         <h2>Informasi</h2>
         <li><a href="{{ url('/news') }}">Berita</a></li>
-        <li><a href="#">Event</a></li>
-    </div>
+    </div> --}}
 
     <div class="links">
-        <h2>Kenali Kami</h2>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Profile</a></li>
+        <h2>Tentang Kami</h2>
+        <li><a href="{{ url('/news') }}">Informasi</a></li>
+        <li><a href="{{ url('/profil') }}">Profile</a></li>
     </div>
     {{-- <div class="links6">
         <h4>Rekomendasi</h4>

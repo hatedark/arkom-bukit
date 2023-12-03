@@ -107,7 +107,7 @@
                     <div class="overlay-panel overlay-right">
                         <h1>Hai Kawan!</h1>
                         <p>Masukkan akun anda dan nikmatilah perjalanan anda!</p>
-                        <button class="ghost" id="signUp">Daftar</button>
+                        <button href="{{ url('/register') }}" class="ghost" id="signUp">Daftar</button>
                     </div>
                 </div>
             </div>

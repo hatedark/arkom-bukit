@@ -1,6 +1,6 @@
 @php
-$fotoData = get_gallery_data('FOTO');
-$videoData = get_gallery_data('VIDEO');
+    $fotoData = get_gallery_data('FOTO');
+    $videoData = get_gallery_data('VIDEO');
 @endphp
 
 <x-app-layout>
@@ -20,11 +20,11 @@ $videoData = get_gallery_data('VIDEO');
         <div class="galeri__title title">Foto</div>
         <div class="galeri-container">
             @foreach ($fotoData as $item)
-            <img loading="lazy" src="{{ asset('storage/' . $item->Files) }}" alt="area keluarga"
-                class="foto__img galeri__img" />
+                <img loading="lazy" src="{{ asset('storage/' . $item->Files) }}" alt="area keluarga"
+                    class="foto__img galeri__img" />
             @endforeach
         </div>
-       
+
         <div class="see-al">Lihat lainnya...</div>
     </section>
     {{-- Foto Section End --}}
@@ -34,19 +34,19 @@ $videoData = get_gallery_data('VIDEO');
         <div class="galeri__title title">Video</div>
         <div class="galeri-container">
             @foreach ($videoData as $item)
-            {{--<img loading="lazy" src="https://source.unsplash.com/random/?family" alt="area keluarga"
+                {{-- <img loading="lazy" src="https://source.unsplash.com/random/?family" alt="area keluarga"
                 class="foto__img" />
             <img loading="lazy" src="https://source.unsplash.com/random/?camera" alt="area foto"
                 class="video__img galeri__img" />
             <img loading="lazy" src="https://source.unsplash.com/random/?cafe" alt="area kafe"
                 class="video__img galeri__img" />
             <img loading="lazy" src="https://source.unsplash.com/random/?camp" alt="area camping"
-                class="video__img galeri__img" />--}}
+                class="video__img galeri__img" /> --}}
                 <video controls width="1280" height="720">
                     <source src="{{ asset('storage/' . $item->Files) }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-             @endforeach
+            @endforeach
         </div>
         <div class="see-al">Lihat lainnya...</div>
     </section>

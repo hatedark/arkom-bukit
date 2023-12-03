@@ -66,8 +66,8 @@ Route::get('/reservasi-kafe', function () {
     return view('reservasi.pemesanan_meja');
 });*/
 Route::middleware('auth')->group(function () {
-Route::get('/reservasi-meja', [ReservationController::class, 'showForm'])->name('show_reservation_form');
-Route::post('/reservasi-meja', [ReservationController::class, 'submitReservation'])->name('submit_reservation');
+    Route::get('/reservasi-meja', [ReservationController::class, 'showForm'])->name('show_reservation_form');
+    Route::post('/reservasi-meja', [ReservationController::class, 'submitReservation'])->name('submit_reservation');
 });
 
 Route::get('/tiket-online', function () {
@@ -78,8 +78,8 @@ Route::get('/tiket-online', function () {
     return view('reservasi.pemesanan_tiket');
 });*/
 Route::middleware('auth')->group(function () {
-Route::view('/pemesanan-tiket', 'reservasi.pemesanan_tiket')->name('pemesanan_tiket');
-Route::post('/submit-tiket', [TiketController::class, 'submitTiket'])->name('submit_tiket');
+    Route::view('/pemesanan-tiket', 'reservasi.pemesanan_tiket')->name('pemesanan_tiket');
+    Route::post('/submit-tiket', [TiketController::class, 'submitTiket'])->name('submit_tiket');
 });
 
 // PAGES
@@ -89,6 +89,10 @@ Route::get('/informasi', function () {
 
 Route::get('/riwayat', function () {
     return view('pages.riwayat');
+});
+
+Route::get('/struk', function () {
+    return view('pages.struk');
 });
 
 Route::get('/dashboard', function () {
@@ -102,7 +106,3 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__ . '/auth.php';
-
-Route::get('/riwayat', function () {
-    return view('pages.riwayat');
-});

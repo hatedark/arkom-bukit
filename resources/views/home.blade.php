@@ -119,41 +119,41 @@
             <h2 class="area__title title">Berbagai Area Menarik</h2>
             <div class="card-h-container">
                 <div class="card-h">
-                    <img loading="lazy" src="image/IMG (19).jpg" alt="family-lounge"
-                        class="card-h__img">
+                    <img loading="lazy" src="image/IMG (19).jpg" alt="family-lounge" class="card-h__img">
                     <div class="card-h__desc-wrapper">
                         <h3 class="card-h__title">Area Keluarga</h3>
                         <p class="card-h__subtitle">Tempat hangat untuk kebersamaan dan kebahagiaan bersama keluarga</p>
                     </div>
                     <i class="fa-solid fa-chevron-right fa-2xl area-logo"></i>
+                    <a href="{{ url('area-keluarga') }}" class="card-h__link"></a>
                 </div>
                 <div class="card-h">
-                    <img loading="lazy" src="image/IMG (14).jpg" alt="spot-photo"
-                        class="card-h__img">
+                    <img loading="lazy" src="image/IMG (14).jpg" alt="spot-photo" class="card-h__img">
                     <div class="card-h__desc-wrapper">
                         <h3 class="card-h__title">Area Foto</h3>
                         <p class="card-h__subtitle">Tempat magis untuk mengungkap momen indah dan berkesan</p>
                     </div>
                     <i class="fa-solid fa-chevron-right fa-2xl area-logo"></i>
+                    <a href="{{ url('area-foto') }}" class="card-h__link"></a>
                 </div>
                 <div class="card-h">
-                    <img loading="lazy" src="image/IMG (16).jpg" alt="area-cafe"
-                        class="card-h__img">
+                    <img loading="lazy" src="image/IMG (16).jpg" alt="area-cafe" class="card-h__img">
                     <div class="card-h__desc-wrapper">
                         <h3 class="card-h__title">Area Cafe</h3>
                         <p class="card-h__subtitle">Aroma kopi, suasana nyaman, tempat ideal untuk bersantai</p>
                     </div>
                     <i class="fa-solid fa-chevron-right fa-2xl area-logo"></i>
+                    <a href="{{ url('area-kafe') }}" class="card-h__link"></a>
                 </div>
                 <div class="card-h">
-                    <img loading="lazy" src="image/IMG (9)-.jpg" alt="area-camping"
-                        class="card-h__img">
+                    <img loading="lazy" src="image/IMG (9)-.jpg" alt="area-camping" class="card-h__img">
                     <div class="card-h__desc-wrapper">
                         <h3 class="card-h__title">Area Camping Ground</h3>
                         <p class="card-h__subtitle">Tempat seru bagi petualang di alam terbuka di bawah langit bintang
                         </p>
                     </div>
                     <i class="fa-solid fa-chevron-right fa-2xl area-logo"></i>
+                    <a href="{{ url('camping-ground') }}" class="card-h__link"></a>
                 </div>
             </div>
         </div>
@@ -169,8 +169,7 @@
             <img loading="lazy" src="image/IMG (22).jpg" alt="random2" class="lensa__img">
             <img loading="lazy" src="image/IMG (24).jpg" alt="random3" class="lensa__img">
             <img loading="lazy" src="image/IMG (9)-.jpg" alt="random4" class="lensa__img">
-            <img loading="lazy" src="image/IMG (15).jpg" alt="random5"
-                class="lensa__img">
+            <img loading="lazy" src="image/IMG (15).jpg" alt="random5" class="lensa__img">
             <img loading="lazy" src="image/IMG (5).jpg" alt="random6" class="lensa__img">
         </div>
     </section>
@@ -181,11 +180,9 @@
         <div class="container">
             <h2 class="comments__title title">Kata Mereka</h2>
             <div class="comments-container">
-                <img loading="lazy" src="image/IMG (20).jpg" alt="nature"
-                    class="comments__img">
+                <img loading="lazy" src="image/IMG (20).jpg" alt="nature" class="comments__img">
                 <div class="comments__desc-container">
-                    <img loading="lazy" src="image/IMG (31).png"
-                        alt="person" class="comments__profile">
+                    <img loading="lazy" src="image/IMG (31).png" alt="person" class="comments__profile">
                     <blockquote class="comments__content">
                         <div class="comments__p">
                             Saya benar-benar terpesona oleh kecantikan dan keindahan

@@ -6,7 +6,7 @@
     <!-- Hero Section start -->
     <section class="hero container">
         <div class="hero__img-wrapper">
-            <img loading="lazy" src="https://source.unsplash.com/random/?green-nature" alt="informasi" class="hero__img">
+            <img loading="lazy" src="image/IMG (20).jpg" alt="informasi" class="hero__img">
         </div>
         <div class="hero__desc" style="padding: 0; align-items: center;">
             <h1 class="hero__title">Informasi</h1>

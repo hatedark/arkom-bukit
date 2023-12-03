@@ -4,8 +4,7 @@
         <i class="fa-solid fa-receipt fa-2xl" style="font-size: 5rem; color: red;"></i>
         <span class="book-meja__title">Pesan Tiket Online </span>
         <hr style="border-color: black; margin: 3rem auto 0 auto" />
-        <img class="bagian1__img" style="margin: 1rem auto; height: 200px"
-            src="https://source.unsplash.com/random/?mountain" alt="foto bukit" />
+        <img class="bagian1__img" src="image/IMG (20).jpg" alt="foto bukit" style="margin: 1rem auto; height: 200px" />
     </section>
     <!-- reserv-meja Section End -->
 

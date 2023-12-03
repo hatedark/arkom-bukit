@@ -14,7 +14,7 @@
         </div>
         <div class="iconsb">
             <i class="fa-solid fa-envelope fa-xl icon"></i>
-            <span>masukkanemailanda@domain.com</span>
+            <span>bukit@panyangrayan.com</span>
         </div>
         <div class="iconsb">
             <i class="fa-solid fa-phone fa-xl icon"></i>

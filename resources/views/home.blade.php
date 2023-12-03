@@ -2,7 +2,7 @@
     <!-- Hero Section start -->
     <section class="hero container">
         <div class="hero__img-wrapper">
-            <img loading="lazy" src="https://source.unsplash.com/random/?green-nature" alt="location" class="hero__img">
+            <img loading="lazy" src="image/IMG (10).jpg" alt="location" class="hero__img">
         </div>
         <div class="hero__desc">
             <h2 class="hero__quote">Explore Keindahan</h2>
@@ -119,7 +119,7 @@
             <h2 class="area__title title">Berbagai Area Menarik</h2>
             <div class="card-h-container">
                 <div class="card-h">
-                    <img loading="lazy" src="https://source.unsplash.com/random/500x500/?dinner" alt="family-lounge"
+                    <img loading="lazy" src="image/IMG (19).jpg" alt="family-lounge"
                         class="card-h__img">
                     <div class="card-h__desc-wrapper">
                         <h3 class="card-h__title">Area Keluarga</h3>
@@ -128,7 +128,7 @@
                     <i class="fa-solid fa-chevron-right fa-2xl area-logo"></i>
                 </div>
                 <div class="card-h">
-                    <img loading="lazy" src="https://source.unsplash.com/random/500x500/?canera" alt="spot-photo"
+                    <img loading="lazy" src="image/IMG (14).jpg" alt="spot-photo"
                         class="card-h__img">
                     <div class="card-h__desc-wrapper">
                         <h3 class="card-h__title">Area Foto</h3>
@@ -137,7 +137,7 @@
                     <i class="fa-solid fa-chevron-right fa-2xl area-logo"></i>
                 </div>
                 <div class="card-h">
-                    <img loading="lazy" src="https://source.unsplash.com/random/500x500/?cafe" alt="area-cafe"
+                    <img loading="lazy" src="image/IMG (16).jpg" alt="area-cafe"
                         class="card-h__img">
                     <div class="card-h__desc-wrapper">
                         <h3 class="card-h__title">Area Cafe</h3>
@@ -146,7 +146,7 @@
                     <i class="fa-solid fa-chevron-right fa-2xl area-logo"></i>
                 </div>
                 <div class="card-h">
-                    <img loading="lazy" src="https://source.unsplash.com/random/500x500/?camp" alt="area-camping"
+                    <img loading="lazy" src="image/IMG (9)-.jpg" alt="area-camping"
                         class="card-h__img">
                     <div class="card-h__desc-wrapper">
                         <h3 class="card-h__title">Area Camping Ground</h3>
@@ -165,13 +165,13 @@
     <section class="lensa container section">
         <h2 class="lensa__title title">Keindahan Terbaik Dalam Lensa</h2>
         <div class="lensa-container">
-            <img loading="lazy" src="https://source.unsplash.com/random/?nature" alt="random1" class="lensa__img">
-            <img loading="lazy" src="https://source.unsplash.com/random/?city" alt="random2" class="lensa__img">
-            <img loading="lazy" src="https://source.unsplash.com/random/?person" alt="random3" class="lensa__img">
-            <img loading="lazy" src="https://source.unsplash.com/random/?forest" alt="random4" class="lensa__img">
-            <img loading="lazy" src="https://source.unsplash.com/random/?mountain" alt="random5"
+            <img loading="lazy" src="image/IMG (19).jpg" alt="random1" class="lensa__img">
+            <img loading="lazy" src="image/IMG (22).jpg" alt="random2" class="lensa__img">
+            <img loading="lazy" src="image/IMG (24).jpg" alt="random3" class="lensa__img">
+            <img loading="lazy" src="image/IMG (9)-.jpg" alt="random4" class="lensa__img">
+            <img loading="lazy" src="image/IMG (15).jpg" alt="random5"
                 class="lensa__img">
-            <img loading="lazy" src="https://source.unsplash.com/random/?animal" alt="random6" class="lensa__img">
+            <img loading="lazy" src="image/IMG (5).jpg" alt="random6" class="lensa__img">
         </div>
     </section>
     <!-- Lensa Section End -->
@@ -181,10 +181,10 @@
         <div class="container">
             <h2 class="comments__title title">Kata Mereka</h2>
             <div class="comments-container">
-                <img loading="lazy" src="https://source.unsplash.com/random/?nature" alt="nature"
+                <img loading="lazy" src="image/IMG (20).jpg" alt="nature"
                     class="comments__img">
                 <div class="comments__desc-container">
-                    <img loading="lazy" src="https://source.unsplash.com/grayscale-photo-of-man-c_GmwfHBDzk"
+                    <img loading="lazy" src="image/IMG (31).png"
                         alt="person" class="comments__profile">
                     <blockquote class="comments__content">
                         <div class="comments__p">
@@ -194,7 +194,7 @@
                             di daerah kabupaten Tasikmalaya ini.
                         </div>
 
-                        <h3 class="comments__writer">- John Doe -</h3>
+                        <h3 class="comments__writer">- Delvan -</h3>
                     </blockquote>
                 </div>
             </div>

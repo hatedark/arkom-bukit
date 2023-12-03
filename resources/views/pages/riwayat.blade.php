@@ -15,7 +15,7 @@
                 <i class="fa-solid fa-chevron-right fa-2xl news-logo"></i>
             </div>
         </div>
-        <img class="bagian1__img" src="https://source.unsplash.com/random/?mountain" alt="foto bukit"
+        <img class="bagian1__img" src="image/IMg (20).jpg" alt="foto bukit"
             style="height: 300px" />
     </section>
     {{-- book-meja Section End --}}

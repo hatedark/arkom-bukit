@@ -113,7 +113,7 @@
 
             <article>
                 <h2>Received from:</h2>
-                <p>John Doe</p>
+                <p>{{ $data->nama }}</p>
 
                 <h3>For:</h3>
                 <p>Coworking-space fee</p>

@@ -18,7 +18,7 @@
     <section class="news container">
         <div class="new__title title">Berita</div>
         <div class="news-container">
-            @foreach ($dataBerita as $news)
+            @forelse ($dataBerita as $news)
                 <div class="news-card">
                     <img loading="lazy" src="{{ asset('storage/' . $news->thumbnail) }}" alt="family-lounge"
                         class="news__img">
@@ -28,7 +28,9 @@
                     </div>
                     <i class="fa-solid fa-chevron-right fa-2xl news-logo"></i>
                 </div>
-            @endforeach
+            @empty
+                <h1 class="see-al">Kosong</h1>
+            @endforelse
             {{-- <div class="news-card">
                 <img loading="lazy" src="https://source.unsplash.com/random/500x500/?dinner" alt="family-lounge"
                     class="news__img">

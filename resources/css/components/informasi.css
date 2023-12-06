@@ -10,10 +10,11 @@
     grid-auto-flow: row;
     grid-auto-rows: 1fr;
     gap: 1rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .news-card {
+    position: relative;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -22,7 +23,23 @@
     border-radius: 2rem;
 
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr auto;
+    gap: 2rem;
+
+    font-size: 1.2rem;
+}
+
+.riwayat-card {
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
     gap: 2rem;
 
     font-size: 1.2rem;
@@ -30,6 +47,7 @@
 
 .news-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 .news__img {
@@ -43,11 +61,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 1rem;
-
+    padding: 2rem 0;
     text-align: left;
-    width: 3fr;
-    align-self: center;
+    overflow: hidden;
+    max-width: 960px;
+    max-height: 300px;
 }
 
 .news__desc-title {
@@ -56,12 +74,16 @@
 }
 
 .news__desc-subtitle {
-    margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .news-logo {
     justify-self: flex-end;
     align-self: center;
     margin-right: 2rem;
+}
+
+.news__desc-content {
+    font-size: 1.3rem;
 }

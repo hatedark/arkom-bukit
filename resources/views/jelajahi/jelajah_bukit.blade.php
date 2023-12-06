@@ -38,42 +38,42 @@
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
                     <img loading="lazy" src="image/IMG (19).jpg" alt="area keluarga" class="destination__img" />
+                    <a href="{{ url('area-keluarga') }}" class="card-h__link"></a>
                 </div>
                 <div class="destination__desc-container">
                     <h1 class="destionation__desc-title">Area Keluarga</h1>
                     <p class="destionation__desc-subtitle">Di Bukit Panyangrayan juga ada area keluarganya loh!</p>
                 </div>
-                <a href="{{ url('area-keluarga') }}" class="card-h__link"></a>
             </div>
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
                     <img loading="lazy" src="image/IMG (14).jpg" alt="area foto" class="destination__img" />
+                    <a href="{{ url('area-foto') }}" class="card-h__link"></a>
                 </div>
                 <div class="destination__desc-container">
                     <h1 class="destionation__desc-title">Area Foto</h1>
                     <p class="destionation__desc-subtitle">Di Bukit Panyangrayan banyak spot buak eksis!</p>
                 </div>
-                <a href="{{ url('area-foto') }}" class="card-h__link"></a>
             </div>
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
                     <img loading="lazy" src="image/IMG (16).jpg" alt="area kafe" class="destination__img" />
+                    <a href="{{ url('area-kafe') }}" class="card-h__link"></a>
                 </div>
                 <div class="destination__desc-container">
                     <h1 class="destionation__desc-title">Area Kafe</h1>
                     <p class="destionation__desc-subtitle">Kamu tak perlu risau masalah perut di Bukit Panyangrayan!</p>
                 </div>
-                <a href="{{ url('area-kafe') }}" class="card-h__link"></a>
             </div>
             <div class="destination__img-container">
                 <div class="destination__img-wrapper">
                     <img loading="lazy" src="image/IMG (9)-.jpg" alt="area camping" class="destination__img" />
+                    <a href="{{ url('camping-ground') }}" class="card-h__link"></a>
                 </div>
                 <div class="destination__desc-container">
                     <h1 class="destionation__desc-title">Area Camping Ground</h1>
                     <p class="destionation__desc-subtitle">Spot camping di Bukit Panyangrayan juga ada loh!</p>
                 </div>
-                <a href="{{ url('camping-ground') }}" class="card-h__link"></a>
             </div>
     </section>
     {{-- Destinasi Section End --}}

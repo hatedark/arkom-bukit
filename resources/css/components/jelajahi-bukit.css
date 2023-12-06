@@ -31,7 +31,16 @@
     height: auto;
 }
 
-.destination__img-wrapper::after {
+.destination__img-wrapper {
+    filter: contrast(40%) brightness(60%);
+    transition: 0.3s;
+}
+
+.destination__img-wrapper:hover {
+    filter: contrast(100%) brightness(100%);
+}
+
+/* .destination__img-wrapper::after {
     content: "";
     background-color: rgba(60, 60, 60, 0.7);
     width: 100%;
@@ -41,7 +50,9 @@
     left: 0;
     z-index: 0;
     border-radius: 2rem;
-}
+    opacity: 1;
+    transition: 0.3s;
+} */
 
 .destination__img {
     aspect-ratio: 2 / 1;
@@ -58,6 +69,7 @@
     color: white;
     text-align: left;
     padding: 0 0 0.3rem 2rem;
+    filter: contrast(100%) brightness(100%);
 }
 
 .destionation__desc-title {

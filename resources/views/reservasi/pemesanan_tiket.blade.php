@@ -4,11 +4,7 @@
         <i class="fa-solid fa-receipt fa-2xl" style="font-size: 5rem; color: red;"></i>
         <span class="book-meja__title">Pesan Tiket Online </span>
         <hr style="border-color: black; margin: 3rem auto 0 auto" />
-<<<<<<< HEAD
-        <img class="bagian1__img" src="image/IMG (20).jpg" alt="foto bukit" style="height: 200px" />
-=======
-        <img class="bagian1__img" src="image/IMG (20).jpg" alt="foto bukit" style="margin: 1rem auto; height: 200px" />
->>>>>>> ed3465caf0a018687fba6b76159eb85e75ffd3f6
+        <img class="bagian1__img" src="image/IMG (20).jpg" alt="foto bukit" style="margin: 2rem auto; height: 200px" />
     </section>
     <!-- reserv-meja Section End -->
 
@@ -28,14 +24,13 @@
                 required>
         </div>
         <div class="form-group">
-            <label id="number-label" for="nomor_hp">No. HP<span class="op">(optional)</span></label>
-            <input type="number" class="form-control" id="nomor_hp" name="nomor_hp" min="13" max="120"
+            <label id="number-label" for="nomor_hp">No. HP<div class="op">(optional)</div></label>
+            <input type="tel" class="form-control" id="nomor_hp" name="nomor_hp" pattern="[0-9]{1,15}"
                 placeholder="Masukkan no.HP">
         </div>
         <div class="form-group">
             <label id="tanggal-label" for="tanggal">Tanggal Kunjungan</label>
-            <input type="date" class="form-control" id="tanggal" name="tanggal" placeholder="Pilih Tanggal"
-                required>
+            <input type="date" class="form-control" id="tanggal" name="tanggal" required>
         </div>
         <div class="form-group">
             <label id="jumlah-label" for="jumlah_tiket">Jumlah Tiket</label>
@@ -46,14 +41,12 @@
         <!-- Text Area -->
         <div class="form-group">
             <label for="keterangan">Ada catatan?</label>
-            <textarea class="form-textarea" id="keterangan" name="keterangan" rows="3" cols="30"
+            <textarea class="form-textarea form-control" id="keterangan" name="keterangan" rows="3" cols="30"
                 placeholder="Tuliskan di sini..."></textarea>
         </div>
 
         <!-- Submit -->
-        <div class="form-group">
-            <button type="submit" id="submit" class="button-submit">Submit</button>
-        </div>
+        <button type="submit" id="submit" class="button-submit">Submit</button>
     </form>
 
 </x-app-layout>

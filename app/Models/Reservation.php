@@ -10,7 +10,7 @@ class Reservation extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nama', 'email', 'nomor_hp', 'tanggal_kunjungan', 'jam_booking', 'meja_id', 'catatan'];
+    protected $fillable = ['user_id', 'nama', 'email', 'nomor_hp', 'tanggal_kunjungan', 'jam_booking', 'meja_id', 'catatan'];
 
     public function meja()
     {

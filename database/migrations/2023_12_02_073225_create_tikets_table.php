@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('tikets', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
             $table->string('nama');
             $table->string('email');
             $table->string('nomor_hp')->nullable();

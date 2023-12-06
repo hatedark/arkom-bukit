@@ -30,35 +30,36 @@
                 Informasi
             </a>
         </li>
-        
-            @if (Route::has('login'))
-                <div>
-                    @auth
+
+        @if (Route::has('login'))
+            <div>
+                @auth
                     <li class="dropdown">
                         <button class="dropbtn">Logged in</button>
                         <p class="droplogo">&#129171;</p>
                         <div class="dropdown-content">
                             <a href="{{ url('/profile') }}">Profile</a>
-                            <form method="POST" action="{{ route('logout') }}">
+                            <form method="POST" action="{{ route('logout') }}" style="padding: 0; margin: 0;">
                                 @csrf
-                                <x-dropdown-link :href="route('logout')"
-                                        onclick="event.preventDefault();
-                                                    this.closest('form').submit();">
+                                <a href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                    this.closest('form').submit();"
+                                    style="padding: 1rem; margin: 0;">
                                     {{ __('Log Out') }}
-                                </x-dropdown-link>
+                                </a>
                             </form>
                         </div>
                     </li>
-                    @else
-                        <a href="{{ route('login') }}" class="header__link">Log in</a>
+                @else
+                    <a href="{{ route('login') }}" class="header__link">Log in</a>
 
-                        @if (Route::has('register'))
-                            <span>/</span>
-                            <a href="{{ route('register') }}" class="header__link">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+                    @if (Route::has('register'))
+                        <span>/</span>
+                        <a href="{{ route('register') }}" class="header__link">Register</a>
+                    @endif
+                @endauth
+            </div>
+        @endif
         </li>
     </ul>
 </nav>

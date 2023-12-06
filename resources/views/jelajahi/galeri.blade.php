@@ -19,13 +19,15 @@
     <section class="galeri container">
         <div class="galeri__title title">Foto</div>
         <div class="galeri-container">
-            @foreach ($fotoData as $item)
+            @forelse ($fotoData as $item)
                 <img loading="lazy" src="{{ asset('storage/' . $item->Files) }}" alt="area keluarga"
                     class="foto__img galeri__img" />
-            @endforeach
+            @empty
+                <h1 class="see-al">Kosong</h1>
+            @endforelse
         </div>
 
-        <div class="see-al">Lihat lainnya...</div>
+        {{-- <div class="see-al">Lihat lainnya...</div> --}}
     </section>
     {{-- Foto Section End --}}
 
@@ -33,7 +35,7 @@
     <section class="galeri container">
         <div class="galeri__title title">Video</div>
         <div class="galeri-container">
-            @foreach ($videoData as $item)
+            @forelse ($videoData as $item)
                 {{-- <img loading="lazy" src="https://source.unsplash.com/random/?family" alt="area keluarga"
                 class="foto__img" />
             <img loading="lazy" src="https://source.unsplash.com/random/?camera" alt="area foto"
@@ -46,9 +48,11 @@
                     <source src="{{ asset('storage/' . $item->Files) }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-            @endforeach
+            @empty
+                <h1 class="see-al">Kosong</h1>
+            @endforelse
         </div>
-        <div class="see-al">Lihat lainnya...</div>
+        {{-- <div class="see-al">Lihat lainnya...</div> --}}
     </section>
     {{-- Video Section End --}}
 </x-app-layout>
